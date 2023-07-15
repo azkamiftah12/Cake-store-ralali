@@ -213,6 +213,11 @@ const latihan = () => {
     const { rating } = form.values;
     const { image } = form.values;
 
+    const errors = form.validate();
+    if (errors.hasErrors) {
+      return;
+    }
+
     try {
       const response = await axios.post(
         `${mockapi}cakes`,{
