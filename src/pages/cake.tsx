@@ -151,7 +151,7 @@ const latihan = () => {
       description: (value) =>
         value.length < 2 ? "Please Fill This!" : null,
       rating: (value) =>
-        value.length < 2 ? "Please Fill This!" : null,
+        value.length < 1 ? "Please Fill This!" : null,
       image: (value) =>
         value.length < 2 ? "Please Fill This!" : null,
     },
